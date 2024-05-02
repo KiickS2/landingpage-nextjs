@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+    font-family: 'ProximaRegular';
+    src: url('../public/fonts/ProximaNova-Regular.otf');
+}
+
+.proxima-regular {
+    font-family: 'ProximaRegular';
+}
+
+@font-face {
+    font-family: 'ProximaBold';
+    src: url('../public//fonts/ProximaNova-Bold.otf');
+}
+
+.proxima-bold {
+    font-family: 'ProximaBold';
+}
