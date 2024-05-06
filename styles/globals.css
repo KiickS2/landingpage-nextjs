@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'ProximaRegular';
     src: url('../public/fonts/ProximaNova-Regular.otf');
@@ -18,4 +22,17 @@
 
 .proxima-bold {
     font-family: 'ProximaBold';
+}
+
+@font-face {
+    font-family: 'ProximaLight';
+    src: url('../public//fonts/ProximaNova-Light.otf');
+}
+
+.proxima-light {
+    font-family: 'ProximaLight';
+}
+
+body {
+    background-color: #380158;
 }
