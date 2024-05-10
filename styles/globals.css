@@ -36,3 +36,21 @@
 body {
     background-color: #380158;
 }
+
+input {
+    font-size: 19px;
+    font-family: 'ProximaLight';
+    padding: 22px 17px;
+    background-color: #F7F7F7;
+    color: black;
+}
+
+h4 {
+    color: #0FCE33;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+footer a {
+    font-size: 24px;
+}
