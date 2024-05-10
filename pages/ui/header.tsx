@@ -3,7 +3,7 @@ import Button from "./button";
 
 const Header = () => {
   return (
-    <header className="flex width-full border-b-[0.5px] border-solid border-[#afafaf49] text-white items-center justify-between py-[34px] px-[180px]">
+    <header className="flex justify-between items-center p-[34px] xl:px-[60px] xxl:px-[180px] m-auto text-white">
       <div>
         <span className="text-[49px] proxima-bold">agência</span>
       </div>

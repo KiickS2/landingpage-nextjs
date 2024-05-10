@@ -1,57 +1,40 @@
-import Image from "next/image";
-import icon from "../../public/images/Outline.svg";
+import Card from "./card";
 
 const Features = () => {
   return (
-    <div className="text-white">
-      <h2 className="m-auto text-[65px] w-[900px] text-center proxima-bold">
+    <div className="p-[34px] py-[100px]">
+      <h2 className="max-w-[845px] m-auto text-[26px] md:text-[50px] lg:text-[45px] xxl:text-[65px] text-center text-white proxima-bold">
         Neste bairro, não há agência melhor. Garantimos.
       </h2>
-      <p className="m-auto mt-[32px] w-[828px] text-center text-[30px] text-[#FFFFFF] opacity-80 proxima-light">
+      <p className="text-[20px] md:text-[26px] xxl:text-[30px] text-center text-white my-[20px] mb-[50px] opacity-80 max-w-[828px] m-auto proxima-light">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div className="grid grid-cols-2 w-fit gap-16 m-auto mt-[100px]">
-        <div className="bg-white rounded-md p-[32px] w-[509px]">
-          <Image src={icon} alt="Icon" width={85} height={85} />
-          <h2 className="text-[#350053] text-[41px] my-[14px] proxima-bold">
-            Digital Strategy
-          </h2>
-          <p className="text-[#4A4A4A] text-[20px] pb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna.
-          </p>
-        </div>
-        <div className="bg-white rounded-md p-[32px] w-[509px]">
-          <Image src={icon} alt="Icon" width={85} height={85} />
-          <h2 className="text-[#350053] text-[41px] my-[14px] proxima-bold">
-            Estratégia digital
-          </h2>
-          <p className="text-[#4A4A4A] text-[20px] pb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="bg-white rounded-md p-[32px] w-[509px]">
-          <Image src={icon} alt="Icon" width={85} height={85} />
-          <h2 className="text-[#350053] text-[41px] my-[14px] proxima-bold">
-            Social Midia
-          </h2>
-          <p className="text-[#4A4A4A] text-[20px] pb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div className="bg-white rounded-md p-[32px] w-[509px]">
-          <Image src={icon} alt="Icon" width={85} height={85} />
-          <h2 className="text-[#350053] text-[41px] my-[14px] proxima-bold">
-            Social Midia
-          </h2>
-          <p className="text-[#4A4A4A] text-[20px] pb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+      <div className="flex flex-col gap-6 xl:gap-12 md:grid md:grid-cols-2 w-fit m-auto">
+        <Card
+          label={"Digital Strategy"}
+          text={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+          }
+        />
+        <Card
+          label={"Estratégia digital"}
+          text={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        />
+        <Card
+          label={"Social Midia"}
+          text={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        />
+        <Card
+          label={"Social Midia"}
+          text={
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        />
       </div>
     </div>
   );
